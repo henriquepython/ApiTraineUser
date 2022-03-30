@@ -4,7 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [UsersModule, MongooseModule.forRoot(
-    'mongodb+srv://root:123456789@@cluster0.2mt7u.mongodb.net/test')],
+    'mongodb://balta:e296cd9f@localhost:27017/admin')],
   controllers: [],
   providers: [],
 })
