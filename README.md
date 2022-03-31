@@ -1,3 +1,8 @@
+# Sobre
+
+É uma Api de cadastro, consulta e atualização de usuarios, utilizando Jwt para autenticação e autorizção dos serviços.
+
+
 
 # NoSQL Database
 
