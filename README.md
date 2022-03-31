@@ -5,6 +5,16 @@
  docker run -v ~/docker --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=balta -e MONGO_INITDB_ROOT_PASSWORD=e296cd9f mongo
 ```
 
+# Auth
+name: joao
+password: 123
+
+# Tecnologias utilizadas
+## Back end
+- JS 
+- NestJs
+- Jwt
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
