@@ -1,14 +1,13 @@
 import { Controller, Post, Body, Scope } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { ApiTags } from '@nestjs/swagger';
-import { AuthService } from './auth.service';
 import { LoginDto } from './dto/login.dto';
 
 
 @ApiTags('auth')
 @Controller({ path: 'auth', scope: Scope.REQUEST})
 export class AuthController {
-  constructor(private readonly authService: AuthService, private readonly jwtService: JwtService) {}
+  constructor(private readonly jwtService: JwtService) {}
 
   @Post()
   async login(@Body() loginDto: LoginDto) {

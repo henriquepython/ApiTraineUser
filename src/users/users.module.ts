@@ -7,7 +7,7 @@ import { JwtStrategy } from 'src/auth/jwt.strategy';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: User.name, schema: UserSchema }], 'user'),
+    MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
 ],
   exports: [],
   controllers: [UsersController],
