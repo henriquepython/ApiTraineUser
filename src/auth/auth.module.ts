@@ -10,7 +10,6 @@ import { JwtStrategy } from './jwt.strategy';
 @Module({
   imports: [
     MongooseModule.forFeature([{ name: Auth.name, schema: AuthSchema }], 'auth'),
-    UsersModule,
     JwtModule.register({
       secret: 'humanotechtrilhanodejs',
       signOptions: { expiresIn: '60s' },

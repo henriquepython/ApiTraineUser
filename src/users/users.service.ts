@@ -10,13 +10,7 @@ export class UsersService {
   constructor(@InjectModel(User.name) private userModel: Model<UserDocument>){}
 
   async create(createUserDto: CreateUserDto) {
-    const users: User = {
-      name: 'joao',
-      email: 'jjj',
-      password: '123',
-
-    }
-    const user = new this.userModel(users);
+    const user = new this.userModel(createUserDto);
     return await user.save();
   }
 
@@ -26,11 +20,6 @@ export class UsersService {
 
   async findOne(id: string) {
     return await this.userModel.findById(id);
-  }
-
-  
-  async findByUsername(name: string) {
-    return await this.userModel.findOne({name});
   }
 
   async update(id: string, updateUserDto: UpdateUserDto) {
