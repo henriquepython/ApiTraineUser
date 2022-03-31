@@ -5,8 +5,8 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    UsersModule,
     AuthModule,
+    UsersModule,
     MongooseModule.forRoot(
     'mongodb://balta:e296cd9f@localhost:27017/admin', {
       connectionName: 'user',
