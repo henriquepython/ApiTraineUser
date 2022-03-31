@@ -28,6 +28,10 @@ export class UsersService {
     return await this.userModel.findById(id);
   }
 
+  
+  async findByUsername(name: string) {
+    return await this.userModel.findOne({name});
+  }
 
   async update(id: string, updateUserDto: UpdateUserDto) {
     return await this.userModel.findByIdAndUpdate({
