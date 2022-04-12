@@ -47,7 +47,7 @@ password: 123
 
 ```bash
 # clonar repositório
-git clone https://github.com/henriquepython/Api-typescript-SOLID.git
+git clone https://github.com/henriquepython/ApiTraineUser.git
 
 # entrar na pasta do projeto
 cd ApiTraineUser
