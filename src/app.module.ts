@@ -7,8 +7,7 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     AuthModule,
     UsersModule,
-    MongooseModule.forRoot(
-    'mongodb://balta:e296cd9f@localhost:27017/admin')
+    MongooseModule.forRoot('mongodb://balta:e296cd9f@localhost:27017/admin'),
   ],
   controllers: [],
   providers: [],
