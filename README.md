@@ -56,5 +56,5 @@ cd ApiTraineUser
 npm install
 
 # executar o projeto
-npm start
+nest start
 ```
