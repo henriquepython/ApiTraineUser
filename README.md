@@ -57,4 +57,7 @@ npm install
 
 # executar o projeto
 nest start
+
+# Acesso a documentação
+http://localhost:3000/docs
 ```
